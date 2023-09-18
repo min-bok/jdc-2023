@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <header>
       <h1>
         <a href="#">
-          <img src="./images/weniv-logo.png" alt="위니브" />
+          <img class="logo" src="./images/weniv-logo.png" alt="위니브" />
         </a>
       </h1>
 
@@ -17,49 +18,51 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Activity</a></li>
+          <li><a href="#activity">Activity</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <!-- section*4 + tab -->
-      <!-- section + tab -->
-      <!-- Ctrl + / (Cmd + /) -->
-      <section>
-        <h2>안녕하세요. <strong>프론트앤드 개발자 라이캣입니다.</strong></h2>
+      <section id="home">
+        <h2>
+          안녕하세요.<br />
+          <strong
+            >프론트앤드 개발자<br />
+            라이캣입니다.</strong
+          >
+        </h2>
         <img
+          class="licat"
           src="./images/Lycat.png"
           alt="인사하는 사자탈을 쓴 고양이 라이캣"
         />
-        <a href="#"><img src="#" alt="하단으로 이동" /></a>
+        <a class="down" href="#about"
+          ><img src="./images/down.svg" alt="하단으로 이동"
+        /></a>
       </section>
 
-      <section>
-        <h2>About</h2>
-        <!-- lorem + tab -->
-        <!-- 여러문단 lorem*문단수(숫자) -->
-        <!-- lorem단어수(숫자) -->
-
+      <section id="about">
+        <h2 class="title">About</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum porro
-          itaque vel fugiat molestias. Eligendi ad optio ratione veritatis quia
-          soluta iste a cum assumenda. Molestias, nulla! Ipsam, necessitatibus
-          maiores?
+          열정적이고 창의적인 프론트엔드 개발자 라이캣입니다.<br />
+          사용자 경험을 개선하고 웹 기술을 활용하여 혁신적인 솔루션을 찾는 것을
+          사랑하며,<br />
+          뛰어난 프론트엔드 웹 애플리케이션을 구축하는 것을 목표로 합니다.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum porro
-          itaque vel fugiat molestias. Eligendi ad optio ratione veritatis quia
-          soluta iste a cum assumenda. Molestias, nulla! Ipsam, necessitatibus
-          maiores?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />Cum
+          porro itaque vel fugiat molestias. <br />Eligendi ad optio ratione
+          veritatis quia soluta iste a cum assumenda. <br />Molestias, nulla!
+          Ipsam, necessitatibus maiores?
         </p>
       </section>
 
-      <section>
-        <h2>Activity</h2>
+      <section id="activity">
+        <h2 class="title">Activity</h2>
 
-        <ul>
+        <ul class="projectTitle">
           <li>
             <strong>프로젝트명1</strong>
             <p>프로젝트에 대한 간략한 설명</p>
@@ -70,7 +73,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="projectImg">
           <li>
             <img
               src="./images/wedream.png"

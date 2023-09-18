@@ -1,0 +1,143 @@
+@import "./reset.css";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+:root {
+  --main-color: #ffe494;
+  --text-color: #121314;
+  --title-color: #ff3440;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Pretendard";
+  color: var(--text-color);
+  background-color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  background-color: var(--main-color);
+  z-index: 999;
+}
+
+header .logo {
+  width: 8.125rem; /* 130px */
+}
+
+header nav ul {
+  display: flex;
+  gap: 32px;
+}
+
+main {
+  padding: 0 100px 0 100px;
+}
+
+main section {
+  padding-top: 72px;
+  height: 100vh;
+}
+
+#home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#home h2 {
+  font-size: 5rem; /* 80px */
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+#home h2 strong {
+  font-size: 6.25rem; /* 100px */
+  font-weight: bold;
+}
+
+#home .licat {
+  width: 31.25rem; /* 500px */
+}
+
+#home .down {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+}
+
+#home .down img {
+  width: 32px;
+}
+
+.title {
+  color: var(--title-color);
+  font-size: 3.75rem; /* 60px */
+  font-weight: bold;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+#about p {
+  font-size: 1.75rem; /* 28px */
+  text-align: center;
+  line-height: 2.5rem; /* 40px */
+}
+
+#activity {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#activity .projectTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#activity .projectTitle strong {
+  font-size: 1.125rem; /* 18px */
+  font-weight: bold;
+}
+
+#activity .projectTitle p {
+  font-size: 1rem; /* 16px */
+  line-height: 1.75rem; /* 28px */
+}
+
+#activity .projectImg {
+  display: flex;
+  justify-content: space-between;
+}
+
+#activity .projectImg img {
+  width: 23.75rem; /* 380px */
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
