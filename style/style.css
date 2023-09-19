@@ -3,8 +3,10 @@
 
 :root {
   --main-color: #ffe494;
+  --bg-color: #ffffff;
   --text-color: #121314;
   --title-color: #ff3440;
+  --wrap-color: #dee8ff;
 }
 
 * {
@@ -20,7 +22,7 @@ body {
   font-size: 16px;
   font-family: "Pretendard";
   color: var(--text-color);
-  background-color: var(--main-color);
+  background-color: var(--bg-color);
 }
 
 a {
@@ -49,25 +51,23 @@ header nav ul {
   gap: 32px;
 }
 
-main {
-  padding: 0 100px 0 100px;
-}
-
 main section {
-  padding-top: 72px;
   height: 100vh;
+  padding: 72px 100px 0 100px;
 }
 
 #home {
+  width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 80px;
+  background-color: var(--main-color);
 }
 
 #home h2 {
   font-size: 5rem; /* 80px */
-  font-weight: 200;
   line-height: 1.2;
 }
 
@@ -94,6 +94,7 @@ main section {
   color: var(--title-color);
   font-size: 3.75rem; /* 60px */
   font-weight: bold;
+  margin: 30px 0;
 }
 
 #about {
@@ -112,7 +113,12 @@ main section {
 #activity {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
+}
+
+#activity ul {
+  width: 70vw;
+  align-self: center;
 }
 
 #activity .projectTitle {
@@ -140,4 +146,47 @@ main section {
   width: 23.75rem; /* 380px */
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact h2 {
+  font-size: 36px;
+}
+
+#contact .contact-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  background-color: var(--wrap-color);
+  border-radius: 30px;
+  padding: 50px;
+  justify-content: space-evenly;
+}
+
+#contact .btn-wrap {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+#contact .btn-wrap .btn {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 12px 24px;
+  border-radius: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--text-color);
+  height: 72px;
 }
