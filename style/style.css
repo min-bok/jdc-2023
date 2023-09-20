@@ -14,6 +14,7 @@
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -29,6 +30,8 @@ a {
   text-decoration: none;
   color: var(--text-color);
 }
+
+/* header */
 
 header {
   display: flex;
@@ -56,6 +59,7 @@ main section {
   padding: 72px 100px 0 100px;
 }
 
+/* home */
 #home {
   width: 100vw;
   position: relative;
@@ -155,7 +159,11 @@ main section {
 }
 
 #contact h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
+}
+
+#contact p {
+  font-size: 1.5rem;
 }
 
 #contact .contact-wrap {
@@ -170,6 +178,7 @@ main section {
 
 #contact .btn-wrap {
   display: flex;
+  flex-direction: column;
   gap: 12px;
   justify-content: flex-end;
 }
@@ -181,6 +190,7 @@ main section {
   background-color: var(--bg-color);
   padding: 12px 24px;
   border-radius: 50px;
+  font-size: 1rem;
 }
 
 footer {
@@ -189,4 +199,5 @@ footer {
   align-items: center;
   border-top: 1px solid var(--text-color);
   height: 72px;
+  font-size: 1rem;
 }

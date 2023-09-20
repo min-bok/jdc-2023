@@ -1,0 +1,50 @@
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  main section {
+    padding: 62px 10px 0 10px;
+  }
+
+  header {
+    height: 52px;
+    padding: 10px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    padding-top: 52px;
+    gap: 10px;
+  }
+
+  /* about */
+  #about p {
+    font-size: 12px;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+
+  #activity .projectImg {
+    display: flex;
+    gap: 20px;
+    width: 80vw;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 376px) {
+  #home h2 {
+    font-size: 30px;
+  }
+
+  #home h2 strong {
+    font-size: 40px;
+  }
+}
